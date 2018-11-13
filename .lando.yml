@@ -1,0 +1,4 @@
+name: drupal-php-7-mar
+recipe: drupal8
+config:
+  webroot: .
