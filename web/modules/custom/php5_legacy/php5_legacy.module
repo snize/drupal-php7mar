@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains php5_legacy.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function php5_legacy_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        // Main module help for the php5_legacy module.
+        case 'help.page.php5_legacy':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('My Awesome Module') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function php5_legacy_theme()
+{
+    $link = mysql_connect('localhost', 'mysql_user', 'mysql_password');
+
+    $array = [0, 1, 2];
+    foreach ($array as &$val) {
+        var_dump(current($array));
+    }
+
+    return [
+        'php5_legacy' => [
+            'render element' => 'children',
+        ],
+    ];
+}
