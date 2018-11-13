@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74c4532ede127eeaee83a670c07112b5",
+    "content-hash": "7e1592b005a63103aef9b2c5e1e58f15",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5435,6 +5435,45 @@
     ],
     "packages-dev": [
         {
+            "name": "alexia/php7mar",
+            "version": "v0.2.0-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Alexia/php7mar.git",
+                "reference": "2ca8796eab3d8cd7407664055499aaacf5725b5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Alexia/php7mar/zipball/2ca8796eab3d8cd7407664055499aaacf5725b5a",
+                "reference": "2ca8796eab3d8cd7407664055499aaacf5725b5a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "project",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Alexia E. Smith",
+                    "email": "washuu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP 7 MAR, or just \"php7mar\", is a command line utility to generate reports on existing PHP 5 code to assist developers in porting their code quickly to PHP 7.",
+            "homepage": "https://github.com/Alexia/php7mar",
+            "keywords": [
+                "PHP7",
+                "migration",
+                "php5",
+                "porting"
+            ],
+            "time": "2016-04-26T16:11:23+00:00"
+        },
+        {
             "name": "behat/mink",
             "version": "dev-master",
             "source": {
@@ -7590,7 +7629,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "alexia/php7mar": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
